@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huy-it | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="avatar-sm">BNH</div>
+                <div class="logo-text">
+                    <span class="name">Bùi Nhật Huy</span>
+                    <span class="role" data-vi="Backend Developer" data-en="Backend Developer">Backend Developer</span>
+                </div>
+            </div>
+            
+            <nav class="nav-pill">
+                <ul>
+                    <li><a href="#home" data-vi="Trang chủ" data-en="Home">Trang chủ</a></li>
+                    <li><a href="#about" data-vi="Giới thiệu" data-en="About">Giới thiệu</a></li>
+                    <li><a href="#projects" data-vi="Dự án" data-en="Projects">Dự án</a></li>
+                    <li><a href="#contact" data-vi="Liên hệ" data-en="Contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <a href="#" class="btn-cv">
+                    <span data-vi="Mở CV" data-en="Open CV">Mở CV</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+                <button id="theme-toggle" class="icon-btn">
+                    <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button id="lang-toggle" class="lang-btn">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 data-vi="Xin chào, mình là" data-en="Hi, I am">Xin chào, mình là</h2>
+                <h1>Bùi Nhật Huy</h1>
+                <p data-vi="Backend Developer chuyên sâu về Java Spring Boot và MySQL. Đam mê xây dựng các hệ thống mạnh mẽ, bảo mật và hiệu năng cao." 
+                   data-en="Backend Developer specializing in Java Spring Boot and MySQL. Passionate about building robust, secure, and high-performance server-side systems.">
+                   Backend Developer chuyên sâu về Java Spring Boot và MySQL. Đam mê xây dựng các hệ thống phía máy chủ mạnh mẽ, bảo mật và hiệu năng cao.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary" data-vi="Xem dự án" data-en="View Projects">Xem dự án</a>
+                    <a href="#" target="_blank" class="btn github">GitHub</a>
+                    <a href="#" target="_blank" class="btn linkedin">LinkedIn</a>
+                    <a href="mailto:your-email@example.com" class="btn email">Email</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/ai-avatar.png" alt="AI Avatar Huy-it">
+            </div>
+        </section>
+
+        <section id="about">
+            <span class="section-subtitle" data-vi="GIỚI THIỆU" data-en="ABOUT ME">GIỚI THIỆU</span>
+            <h3 class="section-title" data-vi="Về tôi" data-en="About Me">Về tôi</h3>
+            <div class="about-container">
+                <div class="bio-card">
+                    <div class="objective">
+                        <h4 data-vi="Mục tiêu nghề nghiệp" data-en="Career Objective">Mục tiêu nghề nghiệp</h4>
+                        <p data-vi="Xin chào! Tôi là Bùi Nhật Huy, sinh viên chuyên ngành Kỹ thuật phần mềm với định hướng phát triển trong lĩnh vực Backend Development. Tôi đặc biệt quan tâm đến kiến trúc hệ thống, tối ưu cơ sở dữ liệu, bảo mật ứng dụng và xây dựng API theo chuẩn RESTful. Tôi có kinh nghiệm làm việc với các công nghệ Backend như Java/Spring Boot, ASP.NET Core và Node.js, cùng với các hệ quản trị cơ sở dữ liệu như PostgreSQL, MySQL và SQL Server. Tôi luôn chú trọng viết code rõ ràng, có cấu trúc tốt, tuân thủ nguyên tắc Clean Code và đảm bảo tính bảo mật tối đa cho hệ thống."
+                           data-en="Hi! I am Bui Nhat Huy, a Software Engineering student aspiring to become a Backend Developer. I am deeply interested in system architecture, database optimization, application security, and building RESTful APIs. I have experience with Backend technologies like Java/Spring Boot, ASP.NET Core, and Node.js, along with database systems like PostgreSQL, MySQL, and SQL Server. I prioritize writing clean, well-structured code, following Clean Code principles and ensuring maximum security for systems.">
+                            Xin chào! Tôi là Bùi Nhật Huy, sinh viên chuyên ngành Kỹ thuật phần mềm với định hướng phát triển trong lĩnh vực Backend Development. Tôi đặc biệt quan tâm đến kiến trúc hệ thống, tối ưu cơ sở dữ liệu, bảo mật ứng dụng và xây dựng API theo chuẩn RESTful. Tôi có kinh nghiệm làm việc với các công nghệ Backend như Java/Spring Boot, ASP.NET Core và Node.js, cùng với các hệ quản trị cơ sở dữ liệu như PostgreSQL, MySQL và SQL Server. Tôi luôn chú trọng viết code rõ ràng, có cấu trúc tốt, tuân thủ nguyên tắc Clean Code và đảm bảo tính bảo mật tối đa cho hệ thống.
+                        </p>
+                        <div class="about-actions" style="justify-content: flex-start;">
+                            <a href="#" class="btn-cv-large" data-vi="Xem CV" data-en="View CV">Xem CV</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+                    <h3 class="side-title">Tech Stack</h3>
+                    <div class="skill-category">
+                        <h4 data-vi="NGÔN NGỮ" data-en="LANGUAGES">NGÔN NGỮ</h4>
+                        <div class="skill-tags">
+                            <span>C#</span><span class="highlight">Java</span><span>JavaScript</span><span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-vi="FRAMEWORK / BACKEND" data-en="FRAMEWORK / BACKEND">FRAMEWORK / BACKEND</h4>
+                        <div class="skill-tags">
+                            <span class="highlight">Spring Boot</span><span>ASP.NET Core</span><span>Node.js</span><span>EF Core</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-vi="CO SỞ DỮ LIỆU" data-en="DATABASE">CO SỞ DỮ LIỆU</h4>
+                        <div class="skill-tags">
+                            <span>PostgreSQL</span><span class="highlight">MySQL</span><span>SQL Server</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-vi="CÔNG CỤ" data-en="TOOLS">CÔNG CỤ</h4>
+                        <div class="skill-tags">
+                            <span>Git</span><span>Postman</span><span>Docker</span><span>Swagger</span><span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3 class="section-title" data-vi="Dự án tiêu biểu" data-en="Featured Projects">Dự án của tôi</h3>
+            
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-tag" data-vi="Backend Focused" data-en="Backend Focused">Backend Focused</div>
+                    <h4 class="project-name">Thegioididong - E-commerce</h4>
+                    <p class="project-desc" data-vi="Hệ thống thương mại điện tử toàn diện với luồng xử lý Backend phức tạp, tập trung vào bảo mật và tích hợp thanh toán."
+                       data-en="A comprehensive e-commerce system with complex backend workflows, focusing on security and payment integrations.">
+                       Hệ thống thương mại điện tử toàn diện với luồng xử lý Backend phức tạp, tập trung vào bảo mật và tích hợp thanh toán.
+                    </p>
+                    
+                    <ul class="backend-highlights">
+                        <li data-vi="Xây dựng luồng thanh toán VNPay và MoMo, xử lý IPN/Callback đồng bộ thực tế." 
+                            data-en="Built VNPay/MoMo payment flows with real-time IPN/Callback handling.">
+                            Xây dựng luồng thanh toán VNPay và MoMo, xử lý IPN/Callback đồng bộ thực tế.
+                        </li>
+                        <li data-vi="Triển khai Spring Security, JWT, OAuth2 (Google) và quên mật khẩu qua OTP Email." 
+                            data-en="Implemented Spring Security, JWT, OAuth2 (Google), and Email OTP for recovery.">
+                            Triển khai Spring Security, JWT, OAuth2 (Google) và quên mật khẩu qua OTP Email.
+                        </li>
+                        <li data-vi="Phát triển hệ thống tích điểm và đổi voucher có xác thực OTP 2 lớp." 
+                            data-en="Developed loyalty points and voucher system with 2FA OTP verification.">
+                            Phát triển hệ thống tích điểm và đổi voucher có xác thực OTP 2 lớp.
+                        </li>
+                        <li data-vi="Xử lý luồng bất đồng bộ (AJAX) giúp tương tác giỏ hàng mượt mà." 
+                            data-en="Handled asynchronous flows (AJAX) for smooth cart interactions.">
+                            Xử lý luồng bất đồng bộ (AJAX) giúp tương tác giỏ hàng mượt mà.
+                        </li>
+                        <li data-vi="Thiết kế MySQL và Spring Data JPA để tối ưu dữ liệu sản phẩm & giao dịch." 
+                            data-en="Designed MySQL & Spring Data JPA to optimize product and transaction data.">
+                            Thiết kế MySQL và Spring Data JPA để tối ưu dữ liệu sản phẩm & giao dịch.
+                        </li>
+                    </ul>
+
+                    <div class="tech-stack">
+                        <span>Java 17</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                        <span>Spring Security</span>
+                        <span>Thymeleaf</span>
+                        <span>AJAX</span>
+                        <span>Maven</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/HuyBui-IT838/E-commerce" target="_blank" class="btn-github">
+                            Open Source 
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <img src="assets/images/Anh1.png" alt="E-commerce Home" class="slider-img">
+                            <img src="assets/images/Anh7.png" alt="E-commerce Feature" class="slider-img">
+                            <img src="assets/images/Anh2.png" alt="Checkout Flow" class="slider-img">
+                            <img src="assets/images/Anh3.png" alt="OTP Security" class="slider-img">
+                            <img src="assets/images/Anh4.png" alt="Payment System" class="slider-img">
+                            <img src="assets/images/Anh5.png" alt="Voucher System" class="slider-img">
+                            <img src="assets/images/Anh6.png" alt="Checkout Detail" class="slider-img">
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev">❮</button>
+                            <button class="slider-btn next">❯</button>
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section id="contact">
+            <span class="section-subtitle" data-vi="SAY HELLO" data-en="SAY HELLO">SAY HELLO</span>
+            <h3 class="section-title contact-title">
+                <span data-vi="Làm việc" data-en="Work">Làm việc</span> 
+                <span class="highlight-text" data-vi="cùng nhé" data-en="together">cùng nhé</span>
+            </h3>
+            <p class="contact-intro" data-vi="Nếu bạn muốn trò chuyện về sản phẩm, backend systems, side project hoặc một ý tưởng thú vị, cứ nhắn cho tôi."
+               data-en="If you want to talk about products, backend systems, side projects, or a cool idea, just drop me a note.">
+               Nếu bạn muốn trò chuyện về sản phẩm, backend systems, side project hoặc một ý tưởng thú vị, cứ nhắn cho tôi.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Info Column -->
+                <div class="contact-info">
+                    <div class="info-card-large">
+                        <h4 data-vi="THÔNG TIN LIÊN HỆ" data-en="CONTACT INFO">THÔNG TIN LIÊN HỆ</h4>
+                        <p data-vi="Nếu hợp gu làm việc, bạn có thể gửi email trực tiếp hoặc để lại một lời nhắn ngắn. Tôi ưu tiên các cuộc trò chuyện rõ ràng, thực tế và có định hướng."
+                           data-en="If you like my vibe, you can email me directly or leave a short note. I prioritize clear, practical, and goal-oriented conversations.">
+                           Nếu hợp gu làm việc, bạn có thể gửi email trực tiếp hoặc để lại một lời nhắn ngắn. Tôi ưu tiên các cuộc trò chuyện rõ ràng, thực tế và có định hướng.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="icon">✉</div>
+                                <div class="details">
+                                    <span class="label">Email</span>
+                                    <p>nhochuybui@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <div class="icon">📞</div>
+                                <div class="details">
+                                    <span class="label" data-vi="Điện thoại" data-en="Phone">Điện thoại</span>
+                                    <p>+84 795 072 522</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="online-profiles">
+                            <h4 data-vi="HỒ SƠ ONLINE" data-en="ONLINE PROFILES">HỒ SƠ ONLINE</h4>
+                            <div class="social-links-grid">
+                                <a href="https://github.com/HuyBui-IT838" class="social-box" target="_blank">
+                                    <span class="social-icon">GitHub</span>
+                                    <span class="social-arrow">↗</span>
+                                </a>
+                                <a href="#" class="social-box" target="_blank">
+                                    <span class="social-icon">LinkedIn</span>
+                                    <span class="social-arrow">↗</span>
+                                </a>
+                                <a href="#" class="social-box" target="_blank">
+                                    <span class="social-icon">Facebook</span>
+                                    <span class="social-arrow">↗</span>
+                                </a>
+                                <a href="#" class="social-box" target="_blank">
+                                    <span class="social-icon">YouTube</span>
+                                    <span class="social-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="message-form" action="https://formsubmit.co/nhochuybui@gmail.com" method="POST">
+                        <span class="form-subtitle" data-vi="SEND A NOTE" data-en="SEND A NOTE">SEND A NOTE</span>
+                        <h3 data-vi="Gửi một lời nhắn ngắn" data-en="Send a short note">Gửi một lời nhắn ngắn</h3>
+                        <p data-vi="Bạn có thể gửi một lời chào, góp ý, lời mời hợp tác hoặc chỉ đơn giản là một ý tưởng muốn trao đổi."
+                           data-en="You can send a greeting, feedback, partnership invitation, or simply an idea you want to discuss.">
+                           Bạn có thể gửi một lời chào, góp ý, lời mời hợp tác hoặc chỉ đơn giản là một ý tưởng muốn trao đổi.
+                        </p>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label data-vi="Họ và tên" data-en="FullName">Họ và tên</label>
+                                <input type="text" name="name" placeholder="Bùi Nhật Huy" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="name@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label data-vi="Tin nhắn" data-en="Message">Tin nhắn</label>
+                            <textarea name="message" rows="5" placeholder="Chào Huy, tôi muốn trao đổi về..." data-vi-placeholder="Chào Huy, tôi muốn trao đổi về..." data-en-placeholder="Hi Huy, I want to discuss about..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-send">
+                            <span data-vi="Gửi lời nhắn" data-en="Send message">Gửi lời nhắn</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
