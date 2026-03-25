@@ -26,7 +26,24 @@ langToggle.addEventListener('click', () => {
     document.querySelectorAll('[data-vi]').forEach(el => {
         el.innerText = el.getAttribute(`data-${currentLang}`);
     });
+
+    // Handle placeholders
+    document.querySelectorAll('[data-vi-placeholder]').forEach(el => {
+        el.placeholder = el.getAttribute(`data-${currentLang}-placeholder`);
+    });
 });
+
+// Scroll Reveal Logic
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.1 });
+
+revealElements.forEach(el => revealObserver.observe(el));
 
 // Initial Theme Selection
 const savedTheme = localStorage.getItem('theme') || 'dark';

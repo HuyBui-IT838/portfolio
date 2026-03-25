@@ -47,6 +47,9 @@
 
     <main>
         <section id="home" class="hero">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            
             <div class="hero-content">
                 <h2 data-vi="Xin chào, mình là" data-en="Hi, I am">Xin chào, mình là</h2>
                 <h1>Bùi Nhật Huy</h1>
@@ -62,11 +65,30 @@
                 </div>
             </div>
             <div class="hero-image">
+                <div class="hero-badge badge-java">
+                    <span class="icon">☕</span>
+                    <span>Java</span>
+                </div>
+                <div class="hero-badge badge-spring">
+                    <span class="icon">🍃</span>
+                    <span>Spring Boot</span>
+                </div>
+                <div class="hero-badge badge-mysql">
+                    <span class="icon">🐬</span>
+                    <span>MySQL</span>
+                </div>
                 <img src="assets/images/avatar.jpg" alt="Bùi Nhật Huy - Backend Developer Portfolio Avatar">
+            </div>
+
+            <div class="hero-scroll">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span data-vi="Cuộn xuống" data-en="Scroll Down">Cuộn xuống</span>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="reveal">
             <span class="section-subtitle" data-vi="GIỚI THIỆU" data-en="ABOUT ME">GIỚI THIỆU</span>
             <h3 class="section-title" data-vi="Về tôi" data-en="About Me">Về tôi</h3>
             <div class="about-container">
@@ -113,7 +135,7 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="reveal">
             <h3 class="section-title" data-vi="Dự án tiêu biểu" data-en="Featured Projects">Dự án của tôi</h3>
             
             <div class="project-card">
@@ -194,9 +216,7 @@
             </div>
         </section>
 
-        </section>
-
-        <section id="contact">
+        <section id="contact" class="reveal">
             <span class="section-subtitle" data-vi="SAY HELLO" data-en="SAY HELLO">SAY HELLO</span>
             <h3 class="section-title contact-title">
                 <span data-vi="Làm việc" data-en="Work">Làm việc</span> 
