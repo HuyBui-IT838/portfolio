@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huy-it | Portfolio</title>
+    <title>Bùi Nhật Huy | Backend Developer Portfolio</title>
+    <meta name="description" content="Portfolio của Bùi Nhật Huy - Backend Developer chuyên về Java Spring Boot, MySQL. Xem các dự án và kỹ năng của tôi.">
+    <meta name="keywords" content="Bùi Nhật Huy, Backend Developer, Java, Spring Boot, MySQL, Portfolio, Kỹ thuật phần mềm">
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/avatar.jpg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,9 +63,9 @@
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary" data-vi="Xem dự án" data-en="View Projects">Xem dự án</a>
-                    <a href="#" target="_blank" class="btn github">GitHub</a>
+                    <a href="https://github.com/HuyBui-IT838" target="_blank" class="btn github">GitHub</a>
                     <a href="https://www.linkedin.com/in/b%C3%B9i-nh%E1%BA%ADt-huy-13ba143b4/" target="_blank" class="btn linkedin">LinkedIn</a>
-                    <a href="mailto:your-email@example.com" class="btn email">Email</a>
+                    <a href="mailto:nhochuybui@gmail.com" class="btn email">Email</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -214,6 +218,60 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project-card reveal">
+                <div class="project-info">
+                    <div class="project-tag" data-vi="API Development" data-en="API Development">API Development</div>
+                    <h4 class="project-name">Mini Social Media API</h4>
+                    <p class="project-desc" data-vi="Hệ thống API mạng xã hội thu nhỏ cho phép người dùng đăng tải nội dung, kết nối và tương tác với nhau. Dự án được xây dựng với kiến trúc RESTful chuẩn, chú trọng vào tính bảo mật và khả năng mở rộng."
+                       data-en="A miniature social media API system that allows users to post content, connect, and interact with each other. Built with standard RESTful architecture, focusing on security and scalability.">
+                       Hệ thống API mạng xã hội thu nhỏ cho phép người dùng đăng tải nội dung, kết nối và tương tác với nhau. Dự án được xây dựng với kiến trúc RESTful chuẩn, chú trọng vào tính bảo mật và khả năng mở rộng.
+                    </p>
+                    
+                    <ul class="backend-highlights">
+                        <li data-vi="Hệ thống Xác thực & Phân quyền bằng JWT và Role-based Access Control (RBAC)." 
+                            data-en="Auth & Security system using JWT and Role-based Access Control (RBAC).">
+                            Hệ thống Xác thực & Phân quyền bằng JWT và Role-based Access Control (RBAC).
+                        </li>
+                        <li data-vi="Quản lý bài viết linh hoạt, hỗ trợ đăng tải hình ảnh qua MultipartFile." 
+                            data-en="Flexible post management with support for image uploads via MultipartFile.">
+                            Quản lý bài viết linh hoạt, hỗ trợ đăng tải hình ảnh qua MultipartFile.
+                        </li>
+                        <li data-vi="Tính năng tương tác: Like/Unlike bài viết và hệ thống bình luận (CRUD) đầy đủ." 
+                            data-en="Interactions: Like/Unlike posts and full Comment system (CRUD).">
+                            Tính năng tương tác: Like/Unlike bài viết và hệ thống bình luận (CRUD) đầy đủ.
+                        </li>
+                        <li data-vi="Hệ thống Follow: Cho phép người dùng theo dõi và xây dựng mạng lưới kết nối." 
+                            data-en="Follow System: Allows users to follow/unfollow and build a connection network.">
+                            Hệ thống Follow: Cho phép người dùng theo dõi và xây dựng mạng lưới kết nối.
+                        </li>
+                        <li data-vi="Tích hợp Swagger/OpenAPI 3.0 giúp tự động hóa tài liệu và kiểm thử API." 
+                            data-en="Integrated Swagger/OpenAPI 3.0 for automated API documentation and testing.">
+                            Tích hợp Swagger/OpenAPI 3.0 giúp tự động hóa tài liệu và kiểm thử API.
+                        </li>
+                    </ul>
+
+                    <div class="tech-stack">
+                        <span>Java 17</span>
+                        <span>Spring Boot 3</span>
+                        <span>MySQL</span>
+                        <span>Spring Data JPA</span>
+                        <span>Spring Security</span>
+                        <span>JWT</span>
+                        <span>Swagger</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/HuyBui-IT838/Social-Media" target="_blank" class="btn-github">
+                            Open Source 
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <img src="assets/images/Anh1_1.png" alt="Mini Social API Documentation" class="static-img" style="width:100%; height:100%; object-fit: contain; background: #fff;">
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="reveal">
@@ -277,6 +335,11 @@
                 <!-- Form Column -->
                 <div class="contact-form-container">
                     <form id="contact-form" class="message-form" action="https://formsubmit.co/nhochuybui@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Message from Portfolio!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
                         <span class="form-subtitle" data-vi="SEND A NOTE" data-en="SEND A NOTE">SEND A NOTE</span>
                         <h3 data-vi="Gửi một lời nhắn ngắn" data-en="Send a short note">Gửi một lời nhắn ngắn</h3>
                         <p data-vi="Bạn có thể gửi một lời chào, góp ý, lời mời hợp tác hoặc chỉ đơn giản là một ý tưởng muốn trao đổi."
